@@ -1,6 +1,6 @@
 # Claude Code Extensions
 
-Common Sense defaults to enhance terminal based AI coding with `sessions` and `docs`, realized as an MCP server. The main flow is sessions which provide a structure way to track and organize your work while you work with the editor. Log progress, pick up where you left off, keep track of relevant links, context etc. Optionally install the `doc` command to create more comprehensive docs you can use to reference later.
+Common sense defaults to enhance terminal based AI coding with `sessions` and `docs`, realized as an MCP server. The main flow is sessions which provide a structure way to track and organize your work while you work with the editor. Log progress, pick up where you left off, keep track of relevant links, context etc. Optionally install the `doc` command to create more comprehensive docs you can use to reference later.
 
 Will be adding more commands over time as I use it more.
 
