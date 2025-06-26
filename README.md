@@ -4,8 +4,6 @@ Common Sense defaults to enhance terminal based AI coding with `sessions` and `d
 
 Will be adding more commands over time as I use it more.
 
-Inspired by [claude-sessions](https://github.com/iannuttall/claude-sessions) for the session design approach and shadcn - simple downloadable file primitives.
-
 > [!WARNING] This is a work in progress. Might change frequently.
 
 ## Currently Works with:
@@ -201,3 +199,8 @@ Want to add a new command? Just:
 3. Submit a pull request
 
 Commands are simple markdown files that describe their usage and behavior.
+
+# Acknowledgements
+
+- [claude-sessions](https://github.com/iannuttall/claude-sessions) for the session design approach
+- [shadcn](https://ui.shadcn.com/) - simple downloadable file primitives.
