@@ -1,0 +1,32 @@
+{
+  "doc": {
+    "name": "doc",
+    "description": "Show command documentation and usage help:",
+    "content": "Show command documentation and usage help:\n\n1. Display available command categories:\n   - Session management commands (session-\\*)\n   - General utility commands\n2. Show command syntax and examples\n3. Provide links to detailed documentation\n4. Display troubleshooting tips\n\nExamples:\n\n- `/doc` - shows general command documentation\n"
+  },
+  "session-log": {
+    "name": "session-log",
+    "description": "Add content to current session with smart section detection:",
+    "content": "Add content to current session with smart section detection:\n\n1. Check if there's an active session (`.claude/sessions/.current-session`)\n2. If no active session, prompt to start one\n3. **With section and content** - Add to specified section:\n   - Format: `/session-log [section] [content]`\n   - Append to specified section of active session file\n   - Add timestamp and entry\n4. **With content only** - Auto-detect section:\n   - Analyze content to determine appropriate section\n   - \"Completed X\", \"Fixed Y\", \"Added Z\" → Progress\n   - \"Using X library\", \"The issue is Y\", \"Note: Z\" → Notes\n   - \"Need to X\", \"TODO: Y\", \"Remember to Z\" → Todo\n   - \"Problem: X\", \"Error: Y\", \"Bug: Z\" → Issues\n5. Display confirmation with section used\n\nExamples:\n- `/session-log progress Completed user authentication` - adds to Progress\n- `/session-log notes Using JWT for session management` - adds to Notes\n- `/session-log Completed user auth` - auto-detects as Progress\n- `/session-log Need to refactor user service` - auto-detects as Todo\n- `/session-log Problem with token validation` - auto-detects as Issues"
+  },
+  "session": {
+    "name": "session",
+    "description": "Manage development sessions - start new, resume existing, or show current:",
+    "content": "Manage development sessions - start new, resume existing, or show current:\n\n1. Check if arguments are provided\n2. **No arguments** - Show current session:\n   - Check `.claude/sessions/.current-session`\n   - If no session, suggest starting one\n   - If active, show: name, duration, recent activity (last 2-3 progress entries)\n3. **With argument** - Start or resume session:\n   - Search for existing session matching the name\n   - If found, switch to it (update `.current-session`)\n   - If not found, create new session with that name\n4. For new sessions, create file with:\n   - Title and timestamp\n   - Pre-created sections: Goals, Context, Rules, Progress, Notes, Todo, Issues, Links\n5. Display brief status after action\n\nExamples:\n- `/session` - shows current session info\n- `/session refactor` - starts new or resumes \"refactor\" session"
+  },
+  "session-end": {
+    "name": "session-end",
+    "description": "End current session:",
+    "content": "End current session:\n\n1. Check if there's an active session (`.claude/sessions/.current-session`)\n2. If no active session, display message that no session is active\n3. **End active session**:\n   - Remove `.claude/sessions/.current-session` file\n   - Display final session summary (name, duration, total progress entries) and update the session file with the final summary\n   - Session file remains for future reference\n4. Suggest starting a new session if needed\n\nExamples:\n\n- `/end` - ends current session and shows summary\n"
+  },
+  "list": {
+    "name": "list",
+    "description": "List all available commands:",
+    "content": "List all available commands:\n\n1. Read all `.md` files from `.claude/commands/` directory\n2. Display each command with:\n   - Command name (filename without .md)\n   - Brief description (first line of file)\n3. Group by categories if possible\n4. Show usage format for each command\n\nExamples:\n- `/list` - shows all available commands with descriptions"
+  },
+  "session-help": {
+    "name": "session-help",
+    "description": "Display session management help:",
+    "content": "Display session management help:\n\n1. Show overview of session system\n2. List all session-related commands:\n   - `/session [name]` - start/resume session\n   - `/session-log [content]` - add content to current session with smart section detection\n   - `/session-end` - end current session\n3. Show workflow examples:\n   - Starting a new project session\n   - Logging progress during development\n   - Adding notes and findings\n   - Ending and reviewing session\n4. Display tips for effective session management\n\nExamples:\n\n- `/session-help` - shows complete session management guide\n"
+  }
+}
