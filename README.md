@@ -39,7 +39,6 @@ claude mcp add --transport sse claude_ext https://mcptools.sh/api/mcp --project
 /mcp to view available commands
 
 /mcp_claude_ext_list_available_commands to list available commands.
-
 -or-
 /mcp_claude_ext_install_session_commands to install the session commands.
 -or-
