@@ -33,14 +33,18 @@ claude mcp add --transport sse claude_ext https://mcptools.sh/api/mcp --user
 claude mcp add --transport sse claude_ext https://mcptools.sh/api/mcp --project
 ```
 
-2. Run `claude` and then:
+2. Run `claude` and then run the following commands:
 
 ```bash
 /mcp to view available commands
 
 /mcp_claude_ext_list_available_commands to list available commands.
+
+-or-
 /mcp_claude_ext_install_session_commands to install the session commands.
+-or-
 /mcp_claude_ext_install_doc_command to install the doc command.
+-or-
 /mcp_claude_ext_install_list_command to install the list command.
 ```
 
