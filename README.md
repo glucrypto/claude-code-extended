@@ -8,7 +8,8 @@ Will be adding more commands over time as I use it more.
 
 ## Demo
 
-![MCP Tools Demo](public/mcptools_6_27.gif)
+https://github.com/user-attachments/assets/6089e382-59e3-4d0b-921c-f6a69ef8456d
+
 
 ## Currently Works with:
 
