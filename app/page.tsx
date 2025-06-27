@@ -9,7 +9,7 @@ export default function Home() {
 
   const copyCommand = async () => {
     const command =
-      "claude mcp add --transport sse claude_ext https://mcptools.sh/api/mcp";
+      "claude mcp add --transport http claude_ext https://mcptools.sh/api/mcp";
     try {
       await navigator.clipboard.writeText(command);
       setCopied(true);
@@ -199,7 +199,7 @@ export default function Home() {
                 <code>
                   <span style={{ color: "#6b7280" }}>$ </span>
                   <span style={{ color: "#10b981" }}>claude mcp add </span>
-                  <span style={{ color: "#3b82f6" }}>--transport sse </span>
+                  <span style={{ color: "#3b82f6" }}>--transport http </span>
                   <span style={{ color: "#f59e0b" }}>claude_ext </span>
                   <span style={{ color: "#ef4444" }}>
                     https://mcptools.sh/api/mcp

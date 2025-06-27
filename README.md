@@ -24,13 +24,13 @@ Not tested yet, but should work if they support MCP:
 
 ```bash
 # Add to current project (local scope)
-claude mcp add  --transport sse claude_ext https://mcptools.sh/api/mcp
+claude mcp add  --transport http claude_ext https://mcptools.sh/api/mcp
 
 # Or add to all projects (user scope)
-claude mcp add --transport sse claude_ext https://mcptools.sh/api/mcp --user
+claude mcp add --transport http claude_ext https://mcptools.sh/api/mcp --user
 
 # Or add to project team (project scope)
-claude mcp add --transport sse claude_ext https://mcptools.sh/api/mcp --project
+claude mcp add --transport http claude_ext https://mcptools.sh/api/mcp --project
 ```
 
 2. Run `claude` and then run the following commands:
