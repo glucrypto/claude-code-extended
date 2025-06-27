@@ -6,14 +6,14 @@ Add content to current session with smart section detection:
    - Format: `/session-log [section] [content]`
    - Append to specified section of active session file
    - Add timestamp and entry
-   - TODO should be an empty checklist item
+   - Any list based section should be an empty checklist item
 4. **With content only** - Auto-detect section:
    - Analyze content to determine appropriate section
    - "Completed X", "Fixed Y", "Added Z" → Progress
    - "Using X library", "The issue is Y", "Note: Z" → Notes
    - "Need to X", "TODO: Y", "Remember to Z" → Todo
    - "Problem: X", "Error: Y", "Bug: Z" → Issues
-   - TODO should be an empty checklist item
+   - Any list based section should be an empty checklist item
 5. Display confirmation with section used
 
 Examples:
