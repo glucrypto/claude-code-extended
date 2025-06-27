@@ -11,7 +11,7 @@ Manage development sessions - start new, resume existing, or show current:
    - If not found, create new session with that name
 4. For new sessions, create file with:
    - Title and timestamp
-   - Pre-created sections: Goals, Context, Rules, Progress, Notes, Todo, Issues, Links
+   - Pre-created sections: Goals, Context, Rules, Progress, Notes, Todo, Issues, Links, Files Changed
    - DO NOT fill in any of the sections, except progress and one bullet in the Goals section
 5. Display brief status after action
 
