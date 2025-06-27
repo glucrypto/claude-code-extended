@@ -12,8 +12,10 @@ Manage development sessions - start new, resume existing, or show current:
 4. For new sessions, create file with:
    - Title and timestamp
    - Pre-created sections: Goals, Context, Rules, Progress, Notes, Todo, Issues, Links
+   - DO NOT fill in any of the sections, except progress and one bullet in the Goals section
 5. Display brief status after action
 
 Examples:
+
 - `/session` - shows current session info
 - `/session refactor` - starts new or resumes "refactor" session
