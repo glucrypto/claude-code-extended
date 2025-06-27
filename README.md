@@ -6,6 +6,10 @@ Will be adding more commands over time as I use it more.
 
 > [!WARNING] This is a work in progress. Might change frequently.
 
+## Demo
+
+![MCP Tools Demo](public/mcptools_6_27.gif)
+
 ## Currently Works with:
 
 - [x] Claude Code

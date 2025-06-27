@@ -64,13 +64,42 @@ export default function Home() {
           style={{
             fontSize: "1.1rem",
             opacity: 0.7,
-            marginBottom: "3rem",
+            marginBottom: "2rem",
             lineHeight: 1.5,
           }}
         >
           Common sense defaults to enhance terminal based AI coding with
           `sessions` and `docs`, realized as an MCP server.
         </p>
+
+        <div
+          style={{
+            width: "100%",
+            maxWidth: "600px",
+            margin: "0 auto 3rem",
+            borderRadius: "12px",
+            overflow: "hidden",
+            border: "1px solid #2a2a2a",
+            background: "#1a1a1a",
+          }}
+        >
+          <video
+            src="/mcptools_6_27_cropped.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+            }}
+            onLoadedMetadata={(e) => {
+              const video = e.currentTarget;
+              video.playbackRate = 2.0;
+            }}
+          />
+        </div>
 
         <div
           style={{
